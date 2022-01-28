@@ -1,5 +1,3 @@
-import fileinput 
-
 def switch_pairs(string):
     switched = ""
     i = 0

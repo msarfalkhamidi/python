@@ -1,5 +1,3 @@
-import fileinput
-
 def word_count(words):
    splited = words.split()
    return len(splited)
