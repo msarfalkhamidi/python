@@ -3,10 +3,8 @@ def switch_pairs(string):
     i = 0
     while i < len(string):
         if (i+1) < len(string):
-            x = string[i+1]
-            switched = "".join([switched, x])
-        x = string[i]
-        switched = "".join([switched, x])
+            switched = "".join([switched, string[i+1]])
+        switched = "".join([switched, string[i]])
         i = i+2
     return switched
 
