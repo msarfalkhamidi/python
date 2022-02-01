@@ -3,14 +3,12 @@ import math
 def is_palindrome(string):
     string = string.lower()
     check = False
-    size = len(string)
     i = 0
-    j = math.floor(size/2)
     if len(string) == 0 or len(string) == 1:
         check = True
     else:
-        while i < j:
-            if string[i] == string[size-1-i]:
+        while i < math.floor(len(string)/2):
+            if string[i] == string[len(string)-1-i]:
                 check = True
             else:
                 check = False
